@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/css/login.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Play and win | Login</title>
+  </head>
+  <body>
+    <div class="logo">
+      <div></div>
+    </div>
+    <form action="Verify" method="post">
+      <div class="usrname-section">
+        <input
+          type="text"
+          name="username"
+          required
+          autocapitalize="off"
+          autocomplete="on"
+          class="username-input"
+        />
+        <label for="username" class="username">
+          <span class="contenet-name">Email</span>
+        </label>
+      </div>
+      <div class="password-section">
+        <input
+          type="password"
+          name="password"
+          required
+          autocapitalize="off"
+          autocomplete="on"
+        />
+        <label for="password" class="password">
+          <span class="contenet-password">Password</span>
+        </label>
+      </div>
+      <input type="submit" value="Sign In" class="submit" />
+    </form>
+  </body>
+</html>

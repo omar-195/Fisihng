@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #0c1a29f1;
+}
+
+.logo {
+  margin-top: 1.5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 25vh;
+}
+
+.logo div {
+  background: url("../img/web.png") center center no-repeat;
+  height: 25vh;
+  width: 100%;
+}
+
+form {
+  height: 50vh;
+  width: 90%;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  overflow: hidden;
+}
+
+form .usrname-section {
+  position: relative;
+}
+
+form .usrname-section input {
+  width: 100%;
+  height: 7vh;
+  color: white;
+  padding-top: 20px;
+  border: none;
+  background-color: transparent;
+}
+
+form .usrname-section label {
+  color: white;
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 7vh;
+  pointer-events: none;
+  border-bottom: 1px solid white;
+}
+
+form .usrname-section label::after {
+  position: absolute;
+  content: "";
+  left: 0%;
+  bottom: -1px;
+  height: 10vh;
+  width: 100%;
+  border-bottom: 3px solid #5fa8d3;
+  -webkit-transform: translate(-100%);
+          transform: translate(-100%);
+}
+
+form .usrname-section .contenet-name {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+form .usrname-section input:focus + .username .contenet-name,
+form .usrname-section input:valid + .username .contenet-name {
+  -webkit-transform: translateY(-150%);
+          transform: translateY(-150%);
+  color: #5fa8d3;
+}
+
+form .password-section {
+  position: relative;
+}
+
+form .password-section input {
+  width: 100%;
+  height: 7vh;
+  color: white;
+  padding-top: 20px;
+  border: none;
+  background-color: transparent;
+}
+
+form .password-section label {
+  color: white;
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 7vh;
+  pointer-events: none;
+  border-bottom: 1px solid white;
+}
+
+form .password-section label::after {
+  position: absolute;
+  content: "";
+  left: 0%;
+  bottom: -1px;
+  height: 10vh;
+  width: 100%;
+  border-bottom: 3px solid #5fa8d3;
+  -webkit-transform: translate(-100%);
+          transform: translate(-100%);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+form .password-section .contenet-password {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+form .password-section input:focus + .password .contenet-password,
+form .password-section input:valid + .password .contenet-password {
+  -webkit-transform: translateY(-150%);
+          transform: translateY(-150%);
+  color: #5fa8d3;
+  border-top: none;
+}
+
+form .submit {
+  height: 7vh;
+  font-size: 2rem;
+  background-color: #2f70fd;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.8rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=login.css.map */

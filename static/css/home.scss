@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #0c1a29f1;
+}
+
+.logo {
+  margin-top: 1.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 25vh;
+  //   background-size: cover;
+  div {
+    background: url("../img/web.png") center center no-repeat;
+    // background-size: cover;
+    height: 25vh;
+    width: 100%;
+  }
+}
+
+.text {
+  font-size: 1.7rem;
+  padding: 2rem;
+  margin: 6vh 0;
+  text-align: center;
+  color: #fff;
+}
+
+.create-an-account {
+  margin: 2vh 0px;
+  width: 55%;
+  height: 7vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(47, 112, 253);
+  border-radius: 5px;
+  a {
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+  }
+}
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
+
+.outline {
+  margin: 8vh 0 0;
+}
+.social-account {
+  margin: 0.5rem 0;
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    height: 7vh;
+    text-decoration: none;
+    font-size: 2.2rem;
+    color: #fff;
+    border-radius: 10px;
+    &:nth-child(1) {
+      background-color: #4267b2;
+    }
+    &:nth-child(2) {
+      background-color: #1da1f2;
+    }
+  }
+}
+
+.have-an-account {
+  text-transform: uppercase;
+  font-size: 0.5rem;
+  margin: 5vh 0;
+  color: #666666;
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+}
